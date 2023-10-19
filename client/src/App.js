@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import React from 'react';
 
 import "./App.css";
 import Home from "./pages/Home/Home";
@@ -7,6 +8,8 @@ import Explore from "./pages/Explore/Explore";
 import Signin from "./pages/Signin/Signin";
 import Navbar from "./components/Navbar/Navbar";
 import Error from "./pages/Error/Error";
+import Messages from "./pages/Messages/Messages";
+
 
 const Layout = () => {
   return (
@@ -34,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/explore",
         element: <Explore />,
+      },
+      {
+        path: "/messages",
+        element: <Messages />,
       },
       {
         path: "/signin",
